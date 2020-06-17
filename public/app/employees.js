@@ -9,6 +9,8 @@ $scope.add_error = false;
 $scope.user = new User();
 $scope.login = true;
 $scope.isValidated=false;
+$scope.login_error=false;
+$scope.signup_error=false;
 
 
 var refresh = function() {
@@ -130,17 +132,19 @@ $scope.log = function(){
 
 
 $scope.Validate = function(){
-  console.log($scope.users);
-  $scope.temp = $scope.users = $scope.users.filter(function(usr){
+  // $scope.users =
+  $scope.temp = $scope.users.filter(function(usr){
     return (usr.man_id == $scope.user.man_id && usr.pwd== $scope.user.pwd)
   })
   console.log($scope.temp);
   if($scope.temp.length != 0){
     console.log('success');
     $scope.isValidated=true;
+    $scope.login_error=false;
     refresh();
   }else{
-    $scope.user=""
+    $scope.login_error=true;
+    //$scope.user=""
   }
   
 }
