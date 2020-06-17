@@ -61,7 +61,7 @@ display: none !important;
     </div>
 
 
-    <div ng-show="isValidated" class="col-md-14 main-form" style="padding-left: 10px;padding-right: 10px;">
+    <div ng-show="isValidated" class="col-md-14 main-form" style="">
     <div class="text-center mob-header">
     <h1><strong>Employee Appraisal Form</strong></h1><br><br>  
     </div>
@@ -380,8 +380,9 @@ display: none !important;
             </div>
           </td>
         </tr>
+
       </tbody>
-    </table><p ng-hide="emps.length" style="padding-left: 20px;">No Records to Show</p><br><br><br>
+    </table><p ng-if="emps.length==0" style="padding-left: 20px;">No Records to Show</p><br><br><br>
     </div>
   </div>
   </div>

@@ -11,8 +11,6 @@ mongoose.connect(dbUrl)
 mongoose.connection.on('connected', () => {
   console.log('Mongoose is connected!!!');
 });
-//mongoose.connect(process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/products-demo');
-// mongoose.connection.on('error', function(){});
 
 // Express
 var app = express();

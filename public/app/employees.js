@@ -1,11 +1,9 @@
 app.controller('EmpCtrl', function($scope, Emp,User,ngProgress, toaster) {
 
 $scope.emp = new Emp();
-//$scope.user = new User();
 $scope.resultCtrl = false;
 $scope.fillCtrl = true;
 $scope.add_error = false;
-//$scope.login = true;
 $scope.user = new User();
 $scope.login = true;
 $scope.isValidated=false;
@@ -91,32 +89,6 @@ $scope.export = function(){
   });
 }
 
-/*$scope.log = function(){
-  $scope.login=true;
-}
-
-$scope.signup = function(){
-  $scope.login=false;
-}
-
-
-
-$scope.Validate = function(id){
-  users.forEach(function(usr){
-    if(usr.man_id === $scope.user.man_id){
-      if(usr.pwd === $scope.user.pwd){
-        console.log('success');
-      }
-    }
-  })
-}
-
-$scope.AddUser = function(){
-  User.save(user,function(user){
-      console.log('Created Successfully');
-      refresh();
-    });
-}*/
 $scope.log = function(){
       $scope.login=true;
   }

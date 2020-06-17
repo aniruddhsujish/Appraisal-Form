@@ -5,7 +5,7 @@ body { background:url(background.jpg) no-repeat; background-size: cover; }
 
 header { background:#ADD8E6 center no-repeat; line-height: 76px; margin-bottom: 30px; background-size:12%; border-bottom:1px solid rgba(0,0,0,.0975); position:fixed; left:0; width:100%; top:0; z-index:99; }
 
-.main-form { padding-top:150px; background: #ffffff;}
+.main-form { padding-top:150px; background: #ffffff;padding-left: 10px;padding-right: 10px;}
 
 .head{padding-top: 20px; padding-bottom: 20px; text-align: center;}
 
